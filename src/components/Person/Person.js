@@ -5,11 +5,12 @@ import './Person.css';
 function Person(props){
   console.log(props)
   return(
-    <div>
+    <article>
+      <img src={props.photo}/>
       <h2>{props.name}</h2>
       <p>{props.quote}</p>
       <p>{props.superlative}</p>
-    </div>
+    </article>
   )
 }
 

@@ -5,7 +5,8 @@ import './Cohort.css';
 // COHORT COMPONENT CODE GOES HERE
 function Cohort(props) {
   console.log(props)
-  const personComponents = props.people.map(person => <Person key={person.id} name={person.name} quote={person.quote} superlative={person.superlative}/>)
+  const personComponents = props.people.map(person => <Person key={person.id} photo={person.photo} name={person.name} quote={person.quote} superlative={person.superlative}/>)
+
   return (
     <main>
       {personComponents}
