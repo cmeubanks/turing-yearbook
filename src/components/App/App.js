@@ -9,6 +9,7 @@ class App extends Component {
     this.state = {
       staff: people.staff
     }
+    // console.log(this.state)
   }
 
   render() {
@@ -17,6 +18,9 @@ class App extends Component {
       <header className="App-header">
       <h1>Turing Yearbook</h1>
       </header>
+        <div>
+          <Cohort people={this.state.staff}/>
+        </div>
         YOUR CODE GOES HERE
       </div>
     );
